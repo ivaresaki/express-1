@@ -1,0 +1,10 @@
+<%- include('../partials/header.ejs') %>
+<!-- <p><%= JSON.stringify(user) %></p> -->
+<% if (user.firstName && user.lastName) { %>
+<h1><%= user.firstName %> <%= user.lastName %></h1>
+
+<% } else { %>
+<p><%= user.email %></p>
+<% } %>
+
+<%- include('../partials/footer.ejs') %>
